@@ -2,9 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User List</title>
 </head>
 <body>
-
+    <h1>User List</h1>
+    <ul>
+        {% for user in users %}
+        <li>{{ user.username }} - {{ user.lastname }} - {{ user.age }} - {{ user.email }}</li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
+
